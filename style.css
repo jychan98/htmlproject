@@ -1,0 +1,119 @@
+body{
+  background-image:url(bkgnd.jpg);
+  background-size:auto;
+}
+
+table{
+  text-align: center;
+  background-color: #ddc1e6;
+  border-spacing: 8px;
+  border-radius: 12px;
+  width: auto;
+}
+tr:hover {background-color: #d094e3}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 3px;
+  overflow: hidden;
+  background-color: #ddc1e6;
+}
+
+li{
+  float: left;
+  border-right:1px solid black;
+}
+li:last-child{
+  border-right: none;
+}
+
+li a{
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+li a:hover:not(.active){
+  background-color: #ddc1e6;
+}
+
+.active{
+  background-color: #c853ed;
+}
+
+h1{
+  text-align: center;
+  color: blue;
+  text-shadow: 3px 1px 3px white;
+}
+
+.header{
+  height: 180px;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  padding-bottom: 5px;
+}
+
+.body{
+  padding-top: 10px;
+  background-color: white;
+  text-align: center;
+  color: black;
+  position: relative;
+  padding-bottom: 10px;
+
+}
+
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #ebe6ed;
+  color: black;
+  text-align: center;
+}
+
+.form-inline {
+  display: block;
+  align-items: center;
+}
+
+.form-inline label {
+  margin: 5px 10px 5px 0;
+}
+
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 7px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.form-inline button {
+  padding: 7px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+  cursor: pointer;
+}
+
+.form-inline button:hover {
+  background-color: royalblue;
+    border: 3px solid #ddd;
+}
+
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
